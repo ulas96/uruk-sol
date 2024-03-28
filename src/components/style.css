@@ -1,0 +1,104 @@
+/* Navbar.css */
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+
+
+.navbar-list {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.navbar-items {
+    list-style: none;
+}
+
+#logo {
+    width:  100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Profile.css */
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    border: 2px solid #1d1a24;
+    border-radius: 10px;
+    background-color: #1f1c26;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content {
+    order: 1;
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-between;
+    order: 2;
+}
+
+
+
+.popup-arrow{
+    display: none;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+.content {
+    border-radius: 10px;
+    width: 40%;
+    height: 30%;
+    z-index: 1000;
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #1d1a24;
+    background-color: #1f1c26;
+    color: white;
+}
+
+.create-input:focus {
+    outline: none;
+}
